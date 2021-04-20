@@ -161,13 +161,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
-    <Content Include="Bootstrap\bootstrap-grid.css" />
-    <Content Include="Bootstrap\bootstrap-grid.min.css" />
-    <Content Include="Bootstrap\bootstrap-reboot.css" />
-    <Content Include="Bootstrap\bootstrap-reboot.min.css" />
-    <Content Include="Bootstrap\bootstrap.css" />
-    <Content Include="Bootstrap\bootstrap.min.css" />
-    <Content Include="Bootstrap\Site.css" />
+    <Content Include="App_Data\images\world.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -354,9 +348,7 @@
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />

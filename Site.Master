@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Patient Tracking System</title>
 
-    <asp:PlaceHolder runat="server">
+    <asp:PlaceHolder runat="server">    
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Bootstrap/css" />
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />-->
+    
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+
+    
    
 
 </head>
@@ -47,13 +49,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Patient Tracking System</a>
+                    <a class="navbar-brand" runat="server" href="Default.aspx">Patient Tracking System</a>
                 </div>
                 <div class="navbar-collapse collapse" >
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="Default.aspx">Home</a></li>
+                        <li><a runat="server" href="About.aspx">About</a></li>
+                        <li><a runat="server" href="Contact.aspx">Contact</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>

@@ -1,42 +1,113 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Patient_Tracking_System._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <!--<style>
+    .box{
+    box-sizing: border-box;
+}
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .button:hover {
+        background-color: #555;
+    }
+</style>-->
+
+    <h2>Responsive "Meet The Team" Section</h2>
+    <p>Resize the browser window to see the effect.</p>
+    <br>
+    
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                
+                <img src="App_Data/images/world.jpg" alt="Jane" width="500" height="400"/>
+                <p><strong>Jane Doe</strong></p>
+                <p>CEO & Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p>
+                    <button class="btn">Contact</button>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <!--<img src="/w3images/team1.jpg" alt="Jane" width="400" height="300">-->
+
+                <asp:Image ImageUrl="~/App_Data/images/world.jpg" AlternateText="jane" Width="400" Height="300" runat="server" />
+                
+                <p><strong>Jane Doe</strong></p>
+                <p>CEO & Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p>
+                    <button class="btn">Contact</button>
+                </p>
+
+            </div>
+        </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="App_Data/images/doc1.png" alt="Jane" width="400" height="300" ">
+
+                    <p><strong>Jane Doe</strong></p>
+                    <p>CEO & Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p>
+                        <button class="btn">Contact</button>
+                    </p>
+
+                </div>
+            </div>
+        
     </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
 </asp:Content>
