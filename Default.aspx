@@ -68,7 +68,7 @@
         <div class="col-sm-4">
             <div class="thumbnail">
                 
-                <img src="App_Data/images/world.jpg" alt="Jane" width="500" height="400"/>
+                <img src="App_Data/images/world.jpg" alt="Jane" width="307" height="216"  />
                 <p><strong>Jane Doe</strong></p>
                 <p>CEO & Founder</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
@@ -80,10 +80,7 @@
         </div>
         <div class="col-sm-4">
             <div class="thumbnail">
-                <!--<img src="/w3images/team1.jpg" alt="Jane" width="400" height="300">-->
-
-                <asp:Image ImageUrl="~/App_Data/images/world.jpg" AlternateText="jane" Width="400" Height="300" runat="server" />
-                
+                <img src="App_Data/images/world.jpg" alt="Jane" width="400" height="300">            
                 <p><strong>Jane Doe</strong></p>
                 <p>CEO & Founder</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
@@ -96,7 +93,7 @@
         </div>
             <div class="col-sm-4">
                 <div class="thumbnail">
-                    <img src="App_Data/images/doc1.png" alt="Jane" width="400" height="300" ">
+                    <img src="App_Data/images/world.jpg" alt="Jane" width="400" height="300" ">
 
                     <p><strong>Jane Doe</strong></p>
                     <p>CEO & Founder</p>
