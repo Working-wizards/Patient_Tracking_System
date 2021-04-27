@@ -98,5 +98,10 @@ namespace Patient_Tracking_System
         {
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
+
+        internal object PasswordSignIn(string text1, string text2, bool shouldLockout)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

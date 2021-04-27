@@ -2,13 +2,118 @@
 
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2><%: Title %>.</h2>
+    
 
-    <div class="row">
-        <div class="col-md-8">
-            <section id="loginForm">
-                <div class="form-horizontal">
-                    <h4>Use a local account to log in.</h4>
+    <style>
+        @media screen and (min-width: 768px) {
+            .jumbotron {
+                margin-top: 20px;
+            }
+
+            .body-content {
+                padding: 0;
+            }
+        }
+
+        .center {
+            position: relative;
+            margin: 0px 200px 0px 200px;
+            padding: 100px 100px 100px 100px;
+        }
+
+        .box-center {
+            position: relative;
+            margin: 0px 250px 0px 250px;
+            padding: 50px;
+        }
+
+        .textbox {
+            position:relative;
+            border: 2px solid;
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            border-radius: 10px;
+            height: 50px;
+            width: 300px;
+            transition: border-color 0.2s;
+        }
+
+            .textbox:focus {
+                position:relative;
+                outline: none;
+                border-top-style: none;
+                border-left-style: none;
+                border-right-style: none;
+                border-width: 3px;
+                border-color: #007acc;
+                text-indent: 10px;
+            }
+
+        .button {
+            position:relative;
+            border: 2px solid;
+            border-radius: 10px;
+            height: 50px;
+            width: 300px;
+            background-color: #2d2d30;
+        }
+
+            .button:hover {
+                background-color: #007acc;
+                color: aliceblue;
+            }
+        /*.input-field {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+}
+input:invalid {
+  outline: 0;
+  /*color: #ff2300;
+  /*   border-color: #ff2300;
+}
+input:focus,
+input:valid {
+  border-color: #00dd22;
+}
+input:focus~label,
+input:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: #00dd22;
+}*/
+    </style>
+
+
+
+
+
+
+    <div class="center form-horizontal">
+        <div class="box-center">
+            <section>
+                <div>
+                    <h4>Login</h4>
                     <hr />
                     <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
                         <p class="text-danger">
@@ -16,33 +121,28 @@
                         </p>
                     </asp:PlaceHolder>
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
-                        <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
+
+                        <div class="input-field col-md-10 ">
+                            <!--<input type="text"  id="Email" required/>
+                            <label for="Email">Email</label>-->
+                            <asp:TextBox runat="server" ID="Email" TextMode="Email" class="textbox" Placeholder="Email" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
                                 CssClass="text-danger" ErrorMessage="The email field is required." />
                         </div>
                     </div>
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
+
+                            <asp:TextBox runat="server" ID="Password" TextMode="Password" class="textbox" Placeholder="Password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <div class="checkbox">
-                                <asp:CheckBox runat="server" ID="RememberMe" />
-                                <asp:Label runat="server" AssociatedControlID="RememberMe">Remember me?</asp:Label>
-                            </div>
-                        </div>
+
+
+                    <div>
+                        <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass=" button" />
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" />
-                        </div>
-                    </div>
+
                 </div>
                 <p>
                     <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register as a new user</asp:HyperLink>
@@ -55,6 +155,7 @@
             </section>
         </div>
 
-        
+
     </div>
+
 </asp:Content>
