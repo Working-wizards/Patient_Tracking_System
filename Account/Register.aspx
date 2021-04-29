@@ -48,7 +48,7 @@
         h2 {
             font-family: Montserrat, sans-serif;
             font-size: 20px;
-            text-indent: 25px;
+            text-indent: 35px;
             font-weight: 800;
         }
     </style>
@@ -59,7 +59,7 @@
 
     <div class="form-horizontal ">
         <div>
-            <h2>Sign in To your account</h2>
+            <h2>Create Your Account</h2>
         </div>
         <br />
 

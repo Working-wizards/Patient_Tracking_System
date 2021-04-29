@@ -26,6 +26,8 @@
         body {
             font: 400 15px/1.8 Lato, sans-serif;
             color: #777;
+            
+            
         }
 
         .navbar {
@@ -85,7 +87,7 @@
     </style>
 
 </head>
-<body>
+<body >
     <form runat="server">
         <!--<asp:ScriptManager runat="server">
         <Scripts>
@@ -134,9 +136,12 @@
                                     <span class="caret "></span></a>
 
                                     <ul class="dropdown-item dropdown-menu">
-                                        <li><a href="Account/Login.aspx">Admin Login</a> </li>
-                                        <li><a href="Account/Login.aspx">Doctor Login </a></li>
-                                        <li><a href="Account/Login.aspx">Patient Login</a></li>
+                                        <li>
+                                            <asp:HyperLink NavigateUrl="~/Account/Admin-Login.aspx" runat="server">Admin Login</asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink NavigateUrl="~/Account/Doctor-Login.aspx" runat="server">Doctor Login</asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink NavigateUrl="~/Account/Patient-Login.aspx" runat="server">Patient Login</asp:HyperLink></li>
                                     </ul>
 
                                 </li>
