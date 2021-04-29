@@ -38,7 +38,7 @@ input[type="select"] {
 }
 
 /*For login Center of the screen*/
-.center {
+/*.center {
     text-align: center;
     margin: 100px;
 }
@@ -58,7 +58,7 @@ input[type="select"] {
     fill-opacity: inherit;
 }
 
-
+    */
 /*Doctor's list on home screen*/
 /*html{
     box-sizing: border-box;
