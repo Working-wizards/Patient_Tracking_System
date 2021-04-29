@@ -2,19 +2,11 @@
 
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-        @media screen and (min-width: 768px) {
-            .jumbotron {
-                margin-top: 20px;
-            }
-
-            .body-content {
-                padding: 0;
-            }
-        }
-
+      
         .center {
             position: relative;
             margin: 0px 200px 0px 200px;
@@ -107,9 +99,9 @@ input:valid~label {
 
 
 
+    
 
-
-    <div class="center form-horizontal">
+    <div class="center ">
         <div class="box-center">
             <section>
                 <div>
@@ -120,9 +112,9 @@ input:valid~label {
                             <asp:Literal runat="server" ID="FailureText" />
                         </p>
                     </asp:PlaceHolder>
-                    <div class="form-group">
+                    <div class="">
 
-                        <div class="input-field col-md-10 ">
+                        <div class="input-field  ">
                             <!--<input type="text"  id="Email" required/>
                             <label for="Email">Email</label>-->
                             <asp:TextBox runat="server" ID="Email" TextMode="Email" class="textbox" Placeholder="Email" />
@@ -130,8 +122,8 @@ input:valid~label {
                                 CssClass="text-danger" ErrorMessage="The email field is required." />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-10">
+                    <div class="">
+                        <div class="">
 
                             <asp:TextBox runat="server" ID="Password" TextMode="Password" class="textbox" Placeholder="Password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
