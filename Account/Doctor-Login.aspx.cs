@@ -25,7 +25,8 @@ namespace Patient_Tracking_System.Account
                 switch (result)
                 {
                     case SignInStatus.Success:
-                        IdentityHelper.RedirectToReturnUrl(Request.QueryString["requesturl"], Response);
+                        
+                        IdentityHelper.RedirectToReturnUrl(Request.QueryString["Doctor-form.aspx"], Response);
                         break;
                     case SignInStatus.LockedOut:
                         Response.Redirect("/Account/Lockout");
