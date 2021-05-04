@@ -55,7 +55,6 @@ namespace Patient_Tracking_System
                 RequireLowercase = true,
                 RequireUppercase = true,
             };
-
             // Register two factor authentication providers. This application uses Phone and Emails as a step of receiving a code for verifying the user
             // You can write your own provider and plug it in here.
             manager.RegisterTwoFactorProvider("Phone Code", new PhoneNumberTokenProvider<ApplicationUser>
@@ -97,11 +96,6 @@ namespace Patient_Tracking_System
         public static ApplicationSignInManager Create(IdentityFactoryOptions<ApplicationSignInManager> options, IOwinContext context)
         {
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
-        }
-
-        internal object PasswordSignIn(string text1, string text2, bool shouldLockout)
-        {
-           throw notImplementedException();
         }
     }
 }

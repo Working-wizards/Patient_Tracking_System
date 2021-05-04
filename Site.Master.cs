@@ -76,6 +76,11 @@ namespace Patient_Tracking_System
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
+
+        protected void Unnamed_Unload(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
