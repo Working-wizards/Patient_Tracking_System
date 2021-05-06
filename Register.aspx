@@ -51,7 +51,12 @@
             text-indent: 35px;
             font-weight: 800;
         }
+        
     </style>
+   
+    <script>
+        
+    </script>
 
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
@@ -79,6 +84,22 @@
                 <asp:TextBox runat="server" ID="Lname" class="textbox" TextMode="SingleLine" Placeholder="Last Name" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Lname"
                     CssClass="text-danger" ErrorMessage="Last Name is required." />
+
+            </div>
+        </div>
+        <div class="form-group">
+            <!--<asp:Label runat="server" AssociatedControlID="Lname" CssClass="col-md-2 control-label">Last Name:</asp:Label>-->
+            <div class="col-md-10">
+                <select runat="server" id="Desig" class="textbox" style="width:280px">
+                    <option hidden selected disabled>Choose here</option>
+                    <option> Doctor</option>
+                    <option>Patient</option>
+                    <option>Admin</option>
+                </select>
+                
+                <!--<asp:TextBox runat="server" ID="type2" class="textbox" TextMode="SingleLine" Placeholder="Last Name" />-->
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="Desig"
+                    CssClass="text-danger" ErrorMessage="Selection is required." />
 
             </div>
         </div>

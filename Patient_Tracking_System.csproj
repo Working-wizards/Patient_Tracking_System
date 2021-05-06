@@ -160,6 +160,13 @@
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Admin-Login.aspx" />
+    <None Include="App_Data\Patient_Tracking_System.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="App_Data\Patient_Tracking_System_log.ldf">
+      <DependentUpon>Patient_Tracking_System.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Doctor-Login.aspx" />
     <Content Include="HtmlPage1.html" />
     <Content Include="HtmlPage2.html" />
