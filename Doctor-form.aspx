@@ -129,7 +129,7 @@
                     <br />
                     <div class="form-group">
                         <div class=" col-md-10">
-                            <asp:Button runat="server" Text="Enter" CssClass="button" />
+                            <asp:Button runat="server" Text="Enter" OnClick="Button_click" CssClass="button" />
                         </div>
                     </div>
                     <p>

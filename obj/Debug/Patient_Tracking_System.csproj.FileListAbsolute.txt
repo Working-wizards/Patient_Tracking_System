@@ -101,3 +101,5 @@ C:\Users\patel\source\repos\Patient_Tracking_System\obj\Debug\Patient_Tracking_S
 C:\Users\patel\source\repos\Patient_Tracking_System\obj\Debug\Patient_Tracking_System.csproj.CopyComplete
 C:\Users\patel\source\repos\Patient_Tracking_System\obj\Debug\Patient_Tracking_System.dll
 C:\Users\patel\source\repos\Patient_Tracking_System\obj\Debug\Patient_Tracking_System.pdb
+C:\Users\patel\source\repos\Patient_Tracking_System\bin\App_Data\Patient_Tracking_System_log.ldf
+C:\Users\patel\source\repos\Patient_Tracking_System\bin\App_Data\Patient_Tracking_System.mdf
