@@ -79,7 +79,6 @@
                         </div>
                     </div>
                     <div class="form-group">
-                       <!-- <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>-->
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="Password" TextMode="Password" Class="textbox" Placeholder="Password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
@@ -102,14 +101,10 @@
                 </div>
                 <div>
                     <h5>Don't have an account?  
-                    <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Sign up!</asp:HyperLink>
+                    <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled" NavigateUrl="~/Register.aspx">Sign up!</asp:HyperLink>
                     </h5>                
                 </div>
-                <p>
-                    <%-- Enable this once you have account confirmation enabled for password reset functionality
-                    <asp:HyperLink runat="server" ID="ForgotPasswordHyperLink" ViewStateMode="Disabled">Forgot your password?</asp:HyperLink>
-                    --%>
-                </p>
+                
             </section>
         </div>
     </div>
