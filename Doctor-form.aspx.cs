@@ -41,6 +41,7 @@ namespace Patient_Tracking_System
 
             conn.Close();
 
+            
             Response.Write("Data entered successfully");
             pfname.Text = "";
             plname.Text = "";
@@ -51,7 +52,7 @@ namespace Patient_Tracking_System
             date.Text = "";
             cost.Text = "";
 
-
+            
         }
     }
 }

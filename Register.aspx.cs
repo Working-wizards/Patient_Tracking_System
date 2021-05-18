@@ -7,15 +7,13 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using Patient_Tracking_System.Models;
-
+using System.Configuration;
 using System.Data;
 
 namespace Patient_Tracking_System.Account
 {
     public partial class Register : Page
     {
-       // SqlConnection conn = new SqlConnection("DefaultConnection");
-
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\patel\source\repos\Patient_Tracking_System\App_Data\Patient_Tracking_System.mdf;Integrated Security=True");
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd = new SqlCommand();

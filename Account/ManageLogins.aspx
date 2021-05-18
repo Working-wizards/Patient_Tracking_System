@@ -8,7 +8,7 @@
         </asp:PlaceHolder>
     <div>
         <section id="externalLoginsForm">
-
+             
             <asp:ListView runat="server"
                 ItemType="Microsoft.AspNet.Identity.UserLoginInfo"
                 SelectMethod="GetLogins" DeleteMethod="RemoveLogin" DataKeyNames="LoginProvider,ProviderKey">

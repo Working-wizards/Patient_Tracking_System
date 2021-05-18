@@ -29,8 +29,9 @@ namespace Patient_Tracking_System.Account
 
             if (dt.Rows[0][0].Equals(1))
             {
-
-                Response.Redirect("Doctor-form.aspx");
+                Session["email"] = Email.Text;
+                Response.Redirect("Appointments.aspx");
+                Session.RemoveAll();
             }
 
             else
