@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="Patient_Tracking_System.Admin" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div style="margin-left:4px; margin-top:50px; font-family:Lato, sans-serif">
-        <asp:GridView ID="GridView1" runat="server"  DataKeyNames="email" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" Height="161px" Width="1139px" ForeColor="Black" GridLines="Horizontal" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px"    >
+    <div style="margin-left: 4px; margin-top: 50px; font-family: Lato, sans-serif">
+        <asp:GridView ID="GridView1" runat="server" DataKeyNames="email" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" Height="161px" Width="1139px" ForeColor="Black" GridLines="Horizontal" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" />
                 <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" InsertVisible="False" ReadOnly="True"></asp:BoundField>
@@ -19,15 +20,15 @@
             <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
             <SortedDescendingCellStyle BackColor="#E5E5E5" />
             <SortedDescendingHeaderStyle BackColor="#242121" />
-                
+
         </asp:GridView>
         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT [Id], [first_name], [last_name], [type], [email] FROM [register]" DeleteCommand="DELETE FROM register WHERE [email]=  @email">
             <DeleteParameters>
-                <asp:Parameter Name="email"  Type="String"/>
+                <asp:Parameter Name="email" Type="String" />
             </DeleteParameters>
         </asp:SqlDataSource>
     </div>
 
-    
-    
+
+
 </asp:Content>

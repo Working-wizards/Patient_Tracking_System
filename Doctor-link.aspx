@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Doctor-link.aspx.cs" Inherits="Patient_Tracking_System.Doctor_link" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -17,21 +18,20 @@
                 background-color: #007acc;
                 color: aliceblue;
             }
-        p{
-           font: 400 20px/1.8 Lato, sans-serif;
+
+        p {
+            font: 400 20px/1.8 Lato, sans-serif;
             color: #777;
-           text-indent:10px;
-
+            text-indent: 10px;
         }
-
     </style>
 
 
-    <div >
-    <p>Enter New data</p>
-    <asp:Button runat="server" Text="New Data" CssClass="button" PostBackUrl="~/Doctor-form.aspx" />
-    <p>See Existing data</p>
-    <asp:Button runat="server" Text="Existing Data" CssClass="button" PostBackUrl="~/Patient-data.aspx" />
+    <div>
+        <p>Enter New data</p>
+        <asp:Button runat="server" Text="New Data" CssClass="button" PostBackUrl="~/Doctor-form.aspx" />
+        <p>See Existing data</p>
+        <asp:Button runat="server" Text="Existing Data" CssClass="button" PostBackUrl="~/Patient-data.aspx" />
     </div>
 
 </asp:Content>

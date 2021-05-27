@@ -7,12 +7,11 @@
             color: #777;
             padding-left: 10px;
         }
-        h3{
 
-             font: 500 30px/2.5 Lato, sans-serif;
+        h3 {
+            font: 500 30px/2.5 Lato, sans-serif;
             color: #777;
-            padding-left:10px;
-            
+            padding-left: 10px;
         }
     </style>
 

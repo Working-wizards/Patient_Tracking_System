@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Patient-data.aspx.cs" Inherits="Patient_Tracking_System.Patient_data" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div style="margin-left:4px; margin-top:50px; font-family:Lato, sans-serif">
-        <asp:GridView ID="GridView1" runat="server" DataKeyNames="patient_email" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" Height="161px" Width="1139px" ForeColor="Black" GridLines="Horizontal" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px"   >
+    <div style="margin-left: 4px; margin-top: 50px; font-family: Lato, sans-serif">
+        <asp:GridView ID="GridView1" runat="server" DataKeyNames="patient_email" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" Height="161px" Width="1139px" ForeColor="Black" GridLines="Horizontal" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
             <Columns>
                 <asp:BoundField DataField="patient_fname" HeaderText="patient_fname" SortExpression="patient_fname"></asp:BoundField>
                 <asp:BoundField DataField="patient_lname" HeaderText="patient_lname" SortExpression="patient_lname"></asp:BoundField>
@@ -24,7 +25,7 @@
             <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
             <SortedDescendingCellStyle BackColor="#E5E5E5" />
             <SortedDescendingHeaderStyle BackColor="#242121" />
-                
+
         </asp:GridView>
         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT [patient_fname], [patient_lname], [patient_email], [phone_number], [disease], [medication], [date], [cost] FROM [doctor_form]" DeleteCommand="DELETE FROM doctor_form WHERE [patient_email]=  @patient_email">
             <DeleteParameters>

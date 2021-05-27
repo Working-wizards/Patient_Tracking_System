@@ -7,12 +7,11 @@
             color: #777;
             padding-left: 10px;
         }
-        h2{
 
-             font: 500 30px/2.5 Lato, sans-serif;
+        h2 {
+            font: 500 30px/2.5 Lato, sans-serif;
             color: #777;
-            padding-left:10px;
-            
+            padding-left: 10px;
         }
     </style>
 
@@ -20,8 +19,9 @@
 
     <h2>About Us</h2>
     <hr />
-    <h3 >Patient Tracking System is online application designed to<br />
-        give Doctors platform to enter the data of all the patients <br />
+    <h3>Patient Tracking System is online application designed to<br />
+        give Doctors platform to enter the data of all the patients
+        <br />
         and also for the patient to book appointment with doctors. 
     </h3>
 
