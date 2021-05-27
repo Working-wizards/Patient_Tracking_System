@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Appointments.aspx.cs" Inherits="Patient_Tracking_System.Appointments" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         .textbox {
@@ -24,7 +25,7 @@
                 text-indent: 10px;
                 box-shadow: inherit;
             }
-        
+
         .button {
             border: 2px solid;
             border-radius: 10px;
@@ -103,17 +104,17 @@
                                 CssClass="text-danger" ErrorMessage="This Field is required." />
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
-                        <div class="col-md-10"> 
-                            <asp:TextBox runat="server" ID="date" class="textbox" TextMode="Date" width="280" Placeholder="Appointment Date" />
+                        <div class="col-md-10">
+                            <asp:TextBox runat="server" ID="date" class="textbox" TextMode="Date" Width="280" Placeholder="Appointment Date" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="date"
                                 CssClass="text-danger" ErrorMessage="Appointment date is required." />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="time" class="textbox" TextMode="Time" width="280" Placeholder="Time" />
+                            <asp:TextBox runat="server" ID="time" class="textbox" TextMode="Time" Width="280" Placeholder="Time" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="time"
                                 CssClass="text-danger" ErrorMessage="Time management required." />
                         </div>
@@ -121,15 +122,11 @@
                     <br />
                     <div class="form-group">
                         <div class=" col-md-10">
-                           <asp:button runat="server" Text="Enter" OnClick="Button_click"  CssClass="button"  />
-                           
+                            <a href="mailto:admin@pts.com">
+                                <asp:Button runat="server" Text="Enter" OnClick="Button_click" CssClass="button" /></a> <%--Email address of admin and doctor--%>
                         </div>
                     </div>
-                    <p>
-                        <%-- Enable this once you have account confirmation enabled for password reset functionality
-                    <asp:HyperLink runat="server" ID="ForgotPasswordHyperLink" ViewStateMode="Disabled">Forgot your password?</asp:HyperLink>
-                        --%>
-                    </p>
+
                 </div>
             </section>
         </div>

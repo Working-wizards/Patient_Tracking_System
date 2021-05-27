@@ -26,7 +26,7 @@
                 text-indent: 10px;
                 box-shadow: inherit;
             }
-        
+
         .button {
             border: 2px solid;
             border-radius: 10px;
@@ -114,14 +114,14 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="date" class="textbox" TextMode="Date" width="280" Placeholder="Date of Arrival" />
+                            <asp:TextBox runat="server" ID="date" class="textbox" TextMode="Date" Width="280" Placeholder="Date of Arrival" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="date"
                                 CssClass="text-danger" ErrorMessage="Date of Arrival is required." />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="cost" class="textbox" TextMode="Number" width="280" Placeholder="Cost" />
+                            <asp:TextBox runat="server" ID="cost" class="textbox" TextMode="Number" Width="280" Placeholder="Cost" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="cost"
                                 CssClass="text-danger" ErrorMessage="Cost is required." />
                         </div>
@@ -129,15 +129,11 @@
                     <br />
                     <div class="form-group">
                         <div class=" col-md-10">
-                           <asp:button runat="server" Text="Enter" OnClick="Button_click" CssClass="button"  />
-                           
+                            <a href="mailto:admin@pts.com">
+                                <asp:Button runat="server" Text="Enter" OnClick="Button_click" CssClass="button" /></a>   <%--Email address of doctor--%>
                         </div>
                     </div>
-                    <p>
-                        <%-- Enable this once you have account confirmation enabled for password reset functionality
-                    <asp:HyperLink runat="server" ID="ForgotPasswordHyperLink" ViewStateMode="Disabled">Forgot your password?</asp:HyperLink>
-                        --%>
-                    </p>
+
                 </div>
             </section>
         </div>

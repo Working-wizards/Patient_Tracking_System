@@ -51,12 +51,11 @@
             text-indent: 35px;
             font-weight: 800;
         }
-        
     </style>
-   
+
     <script>
-        
-    </script>
+
+</script>
 
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
@@ -70,7 +69,6 @@
 
 
         <div class="form-group">
-            <!--<asp:Label runat="server" AssociatedControlID="Fname" CssClass="col-md-2 control-label">First Name:</asp:Label>-->
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="Fname" class="textbox" TextMode="SingleLine" Placeholder="First Name" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Fname"
@@ -79,7 +77,6 @@
             </div>
         </div>
         <div class="form-group">
-            <!--<asp:Label runat="server" AssociatedControlID="Lname" CssClass="col-md-2 control-label">Last Name:</asp:Label>-->
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="Lname" class="textbox" TextMode="SingleLine" Placeholder="Last Name" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Lname"
@@ -88,23 +85,21 @@
             </div>
         </div>
         <div class="form-group">
-            <!--<asp:Label runat="server" AssociatedControlID="Lname" CssClass="col-md-2 control-label">Last Name:</asp:Label>-->
             <div class="col-md-10">
-                <select runat="server" id="Desig" class="textbox" style="width:280px">
+                <select runat="server" id="Desig" class="textbox" style="width: 280px">
                     <option hidden selected disabled>Choose here</option>
-                    <option> Doctor</option>
+                    <option>Doctor</option>
                     <option>Patient</option>
                     <option>Admin</option>
                 </select>
-                
-                <!--<asp:TextBox runat="server" ID="type2" class="textbox" TextMode="SingleLine" Placeholder="Last Name" />-->
+
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Desig"
                     CssClass="text-danger" ErrorMessage="Selection is required." />
 
             </div>
         </div>
         <div class="form-group">
-           <div class="col-md-10">
+            <div class="col-md-10">
                 <asp:TextBox runat="server" ID="Email" class="textbox" TextMode="Email" Placeholder="Email" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
                     CssClass="text-danger" ErrorMessage="Email is required." />

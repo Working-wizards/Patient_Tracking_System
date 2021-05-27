@@ -51,15 +51,6 @@ namespace Patient_Tracking_System.Account
         protected global::System.Web.UI.HtmlControls.HtmlSelect Desig;
 
         /// <summary>
-        /// type2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox type2;
-
-        /// <summary>
         /// Email control.
         /// </summary>
         /// <remarks>
