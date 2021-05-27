@@ -93,7 +93,7 @@
                 </div>
                 <div>
                     <h5>Don't have an account?  
-                    <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Sign up!</asp:HyperLink>
+                    <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled" NavigateUrl="~/Register.aspx">Sign up!</asp:HyperLink>
                     </h5>
                 </div>
 
