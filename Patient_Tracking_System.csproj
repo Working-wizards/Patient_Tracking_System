@@ -155,15 +155,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Admin-link.aspx" />
     <Content Include="Admin-Login.aspx" />
     <None Include="App_Data\Patient_Tracking_System.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="Admin.aspx" />
+    <Content Include="Appointment-manage.aspx" />
     <Content Include="Appointments.aspx" />
     <Content Include="App_Data\Patient_Tracking_System_log.ldf">
       <DependentUpon>Patient_Tracking_System.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Doctor-link.aspx" />
     <Content Include="Doctor-Login.aspx" />
     <Content Include="Img\Background.jpg" />
     <Content Include="Img\Doctor-2.jpg" />
@@ -188,6 +192,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <Content Include="Patient-data.aspx" />
     <Content Include="Patient-Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Doctor-form.aspx" />
@@ -228,12 +233,33 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin-link.aspx.cs">
+      <DependentUpon>Admin-link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin-link.aspx.designer.cs">
+      <DependentUpon>Admin-link.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin-Login.aspx.cs">
       <DependentUpon>Admin-Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin-Login.aspx.designer.cs">
       <DependentUpon>Admin-Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment-manage.aspx.cs">
+      <DependentUpon>Appointment-manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appointment-manage.aspx.designer.cs">
+      <DependentUpon>Appointment-manage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Appointments.aspx.cs">
       <DependentUpon>Appointments.aspx</DependentUpon>
@@ -267,6 +293,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Doctor-link.aspx.cs">
+      <DependentUpon>Doctor-link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doctor-link.aspx.designer.cs">
+      <DependentUpon>Doctor-link.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Doctor-Login.aspx.cs">
       <DependentUpon>Doctor-Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -278,6 +311,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Patient-data.aspx.cs">
+      <DependentUpon>Patient-data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient-data.aspx.designer.cs">
+      <DependentUpon>Patient-data.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Patient-Login.aspx.cs">
       <DependentUpon>Patient-Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
