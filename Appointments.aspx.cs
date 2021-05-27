@@ -11,7 +11,7 @@ namespace Patient_Tracking_System
 {
     public partial class Appointments : System.Web.UI.Page
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\patel\source\repos\Patient_Tracking_System\App_Data\Patient_Tracking_System.mdf;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Patient_Tracking_System.mdf;Integrated Security=True");
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd = new SqlCommand();
         DataTable dt = new DataTable();
@@ -31,7 +31,6 @@ namespace Patient_Tracking_System
             cmd.Parameters.AddWithValue("@date", date.Text);
             cmd.Parameters.AddWithValue("@time", time.Text);
             
-
             conn.Open();
 
             cmd.Connection = conn;
