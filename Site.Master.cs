@@ -68,10 +68,7 @@ namespace Patient_Tracking_System
                 }
             }
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\patel\source\repos\Patient_Tracking_System\App_Data\Patient_Tracking_System.mdf;Integrated Security=True");
-        SqlDataAdapter da = new SqlDataAdapter();
-        SqlCommand cmd = new SqlCommand();
-        DataTable dt = new DataTable();
+      
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -80,8 +77,7 @@ namespace Patient_Tracking_System
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
-            Session.RemoveAll();
-            Response.Redirect("Default.aspx");
+            
         }
 
         protected void Unnamed_Unload(object sender, EventArgs e)
